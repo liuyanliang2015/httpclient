@@ -11,7 +11,6 @@ import org.apache.http.entity.ContentType;
 import org.apache.http.message.BasicHeader;
 
 /**
- * TODO 请输入类的描述
  * @author Administrator	
  */
 public abstract class BaseAPI {
