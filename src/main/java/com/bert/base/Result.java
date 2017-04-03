@@ -1,11 +1,11 @@
 /**
  * 文件名:Result.java 
- * 作者:Administrator
- * 创建时间:2017年3月23日
+ * 作者:LiuYanliang
+ * 创建时间:2017年4月3日
  */
 package com.bert.base;
 /**
- * 接口返回结果1
+ * 接口返回结果
  * @author Administrator	
  */
 public class Result {

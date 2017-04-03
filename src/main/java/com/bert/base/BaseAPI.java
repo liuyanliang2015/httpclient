@@ -1,7 +1,7 @@
 /**
  * 文件名:BaseAPI.java 
- * 作者:liuyanliang
- * 创建时间:2017年3月23日
+ * 作者:LiuYanliang
+ * 创建时间:2017年4月3日
  */
 package com.bert.base;
 
@@ -11,7 +11,8 @@ import org.apache.http.entity.ContentType;
 import org.apache.http.message.BasicHeader;
 
 /**
- * @author Administrator	
+ * 基础API
+ * @author LiuYanliang	
  */
 public abstract class BaseAPI {
 	protected static Header jsonHeader = new BasicHeader(HttpHeaders.CONTENT_TYPE,ContentType.APPLICATION_JSON.toString());
