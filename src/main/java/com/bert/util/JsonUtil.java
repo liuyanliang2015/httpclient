@@ -1,16 +1,17 @@
 package com.bert.util;
 
-import com.alibaba.fastjson.JSON;
+import com.google.gson.Gson;
 
 public class JsonUtil {
+	public static  Gson g = new Gson();
 
 	private JsonUtil(){}
 
 	public static <T> T parseObject(String json,Class<T> clazz){
-		return JSON.parseObject(json, clazz);
+		return g.fromJson(json, clazz);
 	}
 
 	public static String toJSONString(Object object){
-		return JSON.toJSONString(object);
+		return g.toJson(object);
 	}
 }

@@ -22,6 +22,7 @@ import com.sun.xml.internal.bind.marshaller.CharacterEscapeHandler;
  * @author LiYi
  *
  */
+@SuppressWarnings("restriction")
 public class XMLConverUtil{
 
 	private static Map<Class<?>,Unmarshaller> uMap = new HashMap<Class<?>,Unmarshaller>();

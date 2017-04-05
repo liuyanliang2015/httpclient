@@ -4,7 +4,6 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.io.InputStream;
 import java.security.KeyStore;
 import java.security.KeyStoreException;
 import java.security.NoSuchAlgorithmException;
@@ -28,7 +27,7 @@ public class LocalHttpClient {
 	}
 
 	/**
-	 * 初始�?   MCH HttpClient KeyStore
+	 * 初始�?   MCH HttpClient KeyStore
 	 * @param keyStoreName  keyStore 名称
 	 * @param keyStoreFilePath 私钥文件路径
 	 * @param mch_id
