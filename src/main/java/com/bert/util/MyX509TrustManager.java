@@ -1,10 +1,7 @@
 /**
  * 文件名:MyX509TrustManager.java 
- * 工程名：lsp
- * 包名:com.lzz.lsp.psi.util
  * 作者:LiuYanliang
  * 创建时间:2016年9月21日
- * Copyright (C) 2016 绿蜘蛛科技有限公司
  */
 package com.bert.util;
 
