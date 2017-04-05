@@ -15,8 +15,8 @@ import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.impl.conn.PoolingHttpClientConnectionManager;
 
 /**
- * httpclient 4.3.x
- * @author Yi
+ * httpclient
+ * @author LiuYanliang
  *
  */
 @SuppressWarnings("deprecation")
