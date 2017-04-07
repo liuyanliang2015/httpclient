@@ -20,7 +20,7 @@ import com.google.gson.Gson;
  */
 public class TestApi extends BaseAPI {
 
-	private static final String host = "http://localhost/asfp-server";
+	private static final String host = "http://192.168.0.7:9090/asfp-server";
 	private static final Gson g = new Gson();
 	
 	
