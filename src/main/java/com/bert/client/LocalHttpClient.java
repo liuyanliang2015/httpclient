@@ -17,8 +17,16 @@ import org.apache.http.client.HttpClient;
 import org.apache.http.client.ResponseHandler;
 import org.apache.http.client.methods.HttpUriRequest;
 
-public class LocalHttpClient {
+import com.bert.util.JsonFormatTool;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
+public class LocalHttpClient {
+	private static final Gson g = new GsonBuilder()
+    .setPrettyPrinting()
+    .disableHtmlEscaping()
+    .create();
+	
 	protected static HttpClient httpClient = HttpClientFactory.createHttpClient(100,10);
 
 	private static Map<String,HttpClient> httpClient_mchKeyStore = new HashMap<String, HttpClient>();
@@ -27,7 +35,7 @@ public class LocalHttpClient {
 	}
 
 	/**
-	 * 初始�?   MCH HttpClient KeyStore
+	 * 初始化   MCH HttpClient KeyStore
 	 * @param keyStoreName  keyStore 名称
 	 * @param keyStoreFilePath 私钥文件路径
 	 * @param mch_id
@@ -94,6 +102,7 @@ public class LocalHttpClient {
 	 * @return
 	 */
 	public static <T> T executeJson(HttpUriRequest request,Class<T> clazz){
+		System.out.println(JsonFormatTool.formatJson(g.toJson(request)));
 		return execute(request,JsonResponseHandler.ResponseHandler(clazz));
 	}
 	
@@ -103,6 +112,7 @@ public class LocalHttpClient {
      * @return
      */
     public static String executeString(HttpUriRequest request){
+    	System.out.println(JsonFormatTool.formatJson(g.toJson(request)));
         return execute(request,StringResponseHandler.ResponseHandler());
     }
     
@@ -120,11 +130,10 @@ public class LocalHttpClient {
 	 * @param request
 	 * @param clazz
 	 * @return
-	 */
-    
+	 *//*
 	public static <T> T executeXmlResult(HttpUriRequest request,Class<T> clazz){
 		return execute(request,XmlResponseHandler.createResponseHandler(clazz));
-	}
+	}*/
 
 	/**
 	 * MCH keyStore 请求 数据返回自动XML对象解析
