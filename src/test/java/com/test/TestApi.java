@@ -26,10 +26,6 @@ public class TestApi extends BaseAPI {
 	
 	/**
 	 * 输出字符串
-	 * @param name
-	 * @param age
-	 * 
-	 * 116.318393,40.041916
 	 * @return
 	 */
 	@Test
@@ -47,8 +43,6 @@ public class TestApi extends BaseAPI {
 	
 	/**
 	 * 输出json对象
-	 * @param name
-	 * @param age
 	 * @return
 	 */
 	@Test
